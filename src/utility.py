@@ -1,4 +1,13 @@
-﻿import urllib.request 
+﻿'''
+Author: Chuanbin Wang - wcb@sloong.com
+Date: 1970-01-01 08:00:00
+LastEditTime: 2021-02-07 15:51:25
+LastEditors: Chuanbin Wang
+FilePath: /WebDownload-Python/src/utility.py
+Copyright 2015-2020 Sloong.com. All Rights Reserved
+Description: 
+'''
+import urllib.request 
 import re
 import os, sys
 
@@ -62,7 +71,6 @@ def download_page_img(page_url,save_folder):
 def create_save_folder(page_title,folder):
     save_folder = folder + page_title
     if not os.path.exists(save_folder):
-        # os.system("mkdir " + save_folder)
         os.mkdir(save_folder)
     return save_folder
 
